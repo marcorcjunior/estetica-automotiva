@@ -42,7 +42,7 @@
             </div>
             <div class="container-row">
                 <div class="container"></div>
-                <form class="container" action="./pages/funcionario/agendamentos" method="get" id="form-login">
+                <div class="container" method="get" id="form-login">
                     <input placeholder="E-mail" type="email" />
                     <br />
                     <input placeholder="Senha" type="password" />
@@ -58,8 +58,14 @@
                         <div class="container"></div>
                     </div>
                     <br />
-                    <button type="submit" form="form-login" value="Entrar">Entrar</button>
-                </form>
+                    <button onclick="location.href = './pages/funcionario/agendamentos'" type="submit" form="form-login" value="Entrar">
+                        Entrar Funcionario
+                    </button>
+                    <br />
+                    <button onclick="location.href = './pages/cliente/agendamentos'" type="submit" form="form-login" value="Entrar">
+                        Entrar Cliente
+                    </button>
+                </div>
                 <div class="container"></div>
             </div>
         </section>
