@@ -3,14 +3,6 @@
     font-weight: 900;
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48
-}
-
 html,
 body {
     margin: 0px;
@@ -43,6 +35,24 @@ footer {
     right: 0px;
     bottom: 0px;
     margin-top: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding-inline-start: 0px;
+}
+
+hr {
+    margin: 0px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
 }
 
 .container {
