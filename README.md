@@ -70,10 +70,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 🦸 Autor
 
-<a href="https://blog.rocketseat.com.br/author/thiago/">
+<a href="#">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/20648410?v=4" width="100px;" alt=""/>
  <br />
- <sub><b>Marco Junior</b></sub></a> <a href="https://blog.rocketseat.com.br/author/thiago/" title="Rocketseat">🚀</a>
+ <sub><b>Marco Junior</b></sub></a> <a href="#" title="Marco Jr">🚀</a>
  <br />
 
 [![Linkedin Badge](https://img.shields.io/badge/-Marco_Jr-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/marcorcjunior/)](https://www.linkedin.com/in/marcorcjunior/)
