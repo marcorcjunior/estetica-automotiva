@@ -23,7 +23,7 @@
         <span alt="Autoestétic" class="material-symbols-outlined" style="font-size: 64px; padding: 8px;">
             image
         </span>
-        <h1>Manutençao de clientes</h1>
+        <h1>Manutenção agenda de serviços</h1>
         <div class="container"></div>
         <a href="../../../../src/" style="flex: 0; flex-direction: column; align-items: center; padding: 8px;">
             <span alt="sair" class="material-symbols-outlined" style="font-size: 36px;">
@@ -41,32 +41,35 @@
         </h2>
         <br />
 
-        <form class="container" action="#" method="post/put" id="form-cad-clientes">
+        <form class="container" action="./" method="post/put" id="form-cad-agenda">
 
-            <input name="nome-completo" id="nome-completo" placeholder="Nome completo" />
+            <select name="clientes" id="clientes">
+                <option value="" disabled selected>Selecione o cliente</option>
+            </select>
             <br />
-            <input name="email" id="email" placeholder="E-mail" type="email" />
+            <select name="carros" id="carros">
+                <option value="" disabled selected>Selecione o carro do cliente</option>
+            </select>
+
+
             <br />
-            <input name="cpf" id="cpf" placeholder="CPF" />
-            <br />
-            <input name="telefone" id="telefone" placeholder="Telefone" type="number" />
+
+            <input type="date" />
 
             <br />
             <br />
             <h3>
-                Lista de carros
+                Lista de serviços
             </h3>
 
 
             <div class="container-row">
                 <div class="container" style="justify-content: center;">
-                    <input name="modelo" id="modelo" placeholder="Modelo" />
+                    <select name="servicos" id="servicos" style="margin-right: 16px;">
+                        <option value="" disabled selected>Selecione o serviço</option>
+                    </select>
+
                 </div>
-                <div style="margin: 8px;"></div>
-                <div class="container" style="justify-content: center;">
-                    <input name="placa" id="placa" placeholder="Placa" />
-                </div>
-                <div style="margin: 8px;"></div>
                 <button style="width: 48px; height: 48px; justify-content: center; border-radius: 50%;">
                     <div class="container"></div>
                     <div class="container">
@@ -79,32 +82,11 @@
             </div>
 
             <br />
-            <button type="submit" form="form-cad-clientes" value="Editar">Editar</button>
+            <button type="submit" form="form-cad-agenda" value="Adicionar/Editar">Adicionar/Editar</button>
 
         </form>
 
     </main>
-
-
-    <footer class="container-row" style="background-color: #D9D9D9; padding: 8px;">
-        <div class="container"></div>
-
-        <a href="../agendamentos/" class="container" style="align-items: center;">
-            <span alt="home" class="material-symbols-outlined" style="font-size: 36px;">
-                home
-            </span>
-            <label>agenda</label>
-        </a>
-        <div class="container"></div>
-        <a href="../meus-dados/" class="container" style="align-items: center;">
-            <span alt="home" class="material-symbols-outlined" style="font-size: 36px;">
-                account_circle
-            </span>
-            <label>meus dados</label>
-        </a>
-
-        <div class="container"></div>
-    </footer>
 
 
 </body>

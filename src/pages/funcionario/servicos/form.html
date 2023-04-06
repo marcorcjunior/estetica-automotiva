@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoestétic</title>
+
+    <link rel="stylesheet" href="../../../assets/css/styles.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header style="background-color: #D9D9D9;">
+        <span alt="Autoestétic" class="material-symbols-outlined" style="font-size: 64px; padding: 8px;">
+            image
+        </span>
+        <h1>Manutençao de serviços</h1>
+        <div class="container"></div>
+        <a href="../../../../src/" style="flex: 0; flex-direction: column; align-items: center; padding: 8px;">
+            <span alt="sair" class="material-symbols-outlined" style="font-size: 36px;">
+                logout
+            </span>
+            <label>sair</label>
+        </a>
+    </header>
+    <br />
+
+    <main class="container" style="padding-left: 16px; padding-right: 16px;">
+
+        <h2>
+            Formulario de dados
+        </h2>
+        <br />
+
+        <form class="container" action="./" method="post/put" id="form-cad-servico">
+
+            <input name="titulo" id="titulo" placeholder="Titulo" type="text" />
+            <br />
+            <input name="descricao" id="descricao" placeholder="Descrição" type="text" />
+            <br />
+            <input name="valor" id="valor" placeholder="Valor serviço" type="number" />
+            <br />
+            <input name="tempo" id="tempo" placeholder="Tempo médio de execução" type="time" />
+
+            <br />
+            <br />
+            <button type="submit" form="form-cad-servico" value="Adicionar/Editar">Adicionar/Editar</button>
+
+        </form>
+
+    </main>
+
+
+</body>
+
+</html>
