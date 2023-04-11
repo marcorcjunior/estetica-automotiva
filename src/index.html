@@ -8,7 +8,8 @@
     <title>Autoestétic</title>
 
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,21 +20,13 @@
 
 <body>
     <br />
-    <br />
-    <br />
-    <div class="container-row">
-        <div class="container"></div>
-        <div class="backgroundimg">
-            <span alt="Autoestétic" class="material-symbols-outlined" style="font-size: 96px;">
-                image
-            </span>
-        </div>
-        <div class="container"></div>
+    <div class="container" style="align-content: center; align-items: center;">
+        <img src="./assets/imagens/logo.png" alt="Autoestétic" class="img-logo-login" />
     </div>
     <br />
 
-    <main>    
-    
+    <main style="margin-top: 0px;">
+
         <section title="login" class="container">
             <div class="container-row">
                 <div class="container"></div>
@@ -58,11 +51,13 @@
                         <div class="container"></div>
                     </div>
                     <br />
-                    <button onclick="location.href = './pages/funcionario/agendamentos'" type="submit" form="form-login" value="Entrar">
+                    <button class="button-padrao" onclick="location.href = './pages/funcionario/agendamentos'"
+                        type="submit" form="form-login" value="Entrar">
                         Entrar Funcionario
                     </button>
                     <br />
-                    <button onclick="location.href = './pages/cliente/agendamentos'" type="submit" form="form-login" value="Entrar">
+                    <button class="button-padrao" onclick="location.href = './pages/cliente/agendamentos'" type="submit"
+                        form="form-login" value="Entrar">
                         Entrar Cliente
                     </button>
                 </div>

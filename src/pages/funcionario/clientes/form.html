@@ -19,69 +19,89 @@
 
 <body>
 
-    <header style="background-color: #D9D9D9;">
-        <span alt="Autoestétic" class="material-symbols-outlined" style="font-size: 64px; padding: 8px;">
-            image
-        </span>
+    <header>
+        <button onclick="history.back();" class="button-header">
+            <span alt="voltar" class="material-symbols-outlined" style="font-size: 36px;">
+                arrow_back
+            </span>
+        </button>
+
         <h1>Manutençao de clientes</h1>
         <div class="container"></div>
-        <a href="../../../../src/" style="flex: 0; flex-direction: column; align-items: center; padding: 8px;">
+
+        <button onclick="" class="button-header">
             <span alt="sair" class="material-symbols-outlined" style="font-size: 36px;">
-                logout
+                delete
             </span>
-            <label>sair</label>
-        </a>
+        </button>
+
     </header>
     <br />
 
-    <main class="container" style="padding-left: 16px; padding-right: 16px;">
+    <main>
 
-        <h2>
-            Formulario de dados
-        </h2>
-        <br />
+        <div class="container-row">
+            <div class="container"></div>
+            <div class="container" style="padding-left: 16px; padding-right: 16px;">
 
-        <form class="container" action="./" method="post/put" id="form-cad-clientes">
+                <h2>
+                    Formulario de dados
+                </h2>
+                <br />
 
-            <input name="nome-completo" id="nome-completo" placeholder="Nome completo" />
-            <br />
-            <input name="email" id="email" placeholder="E-mail" type="email" />
-            <br />
-            <input name="cpf" id="cpf" placeholder="CPF" />
-            <br />
-            <input name="telefone" id="telefone" placeholder="Telefone" type="number" />
+                <form class="container" action="./" method="post/put" id="form-cad-clientes">
 
-            <br />
-            <br />
-            <h3>
-                Lista de carros
-            </h3>
+                    <input name="nome-completo" id="nome-completo" placeholder="Nome completo" />
+                    <br />
+                    <input name="email" id="email" placeholder="E-mail" type="email" />
+                    <br />
+                    <input name="cpf" id="cpf" placeholder="CPF" />
+                    <br />
+                    <input name="telefone" id="telefone" placeholder="Telefone" type="number" />
+
+                    <br />
+                    <br />
+                    <h3>
+                        Lista de carros
+                    </h3>
 
 
-            <div class="container-row">
-                <div class="container" style="justify-content: center;">
-                    <input name="modelo" id="modelo" placeholder="Modelo" />
-                </div>
-                <div style="margin: 8px;"></div>
-                <div class="container" style="justify-content: center;">
-                    <input name="placa" id="placa" placeholder="Placa" />
-                </div>
-                <div style="margin: 8px;"></div>
-                <button style="width: 48px; height: 48px; justify-content: center; border-radius: 50%;">
-                    <div class="container"></div>
-                    <div class="container">
-                        <span alt="sair" class="material-symbols-outlined" style="font-size: 24px;">
-                            add
-                        </span>
+                    <div class="container-row" style="flex-wrap: wrap;">
+                        <div class="container" style="justify-content: center;">
+                            <input name="modelo" id="modelo" placeholder="Modelo" />
+                        </div>
+
+                        <div style="margin: 8px;"></div>
+
+                        <div class="container" style="justify-content: center;">
+                            <input name="placa" id="placa" placeholder="Placa" />
+                        </div>
+
+                        <div style="margin: 8px;"></div>
+
+                        <button class="button-add-aux">
+                            <div class="container"></div>
+                            <div class="container">
+                                <span alt="sair" class="material-symbols-outlined" style="font-size: 24px;">
+                                    add
+                                </span>
+                            </div>
+                            <div class="container"></div>
+                        </button>
+
                     </div>
-                    <div class="container"></div>
-                </button>
+
+                    <br />
+                    <button class="button-padrao" type="submit" style="width: 256px;" form="form-cad-clientes"
+                        value="Adicionar/Editar">Adicionar/Editar</button>
+
+                    <br />
+                    <br />
+                </form>
             </div>
+            <div class="container"></div>
+        </div>
 
-            <br />
-            <button type="submit" form="form-cad-clientes" value="Adicionar/Editar">Adicionar/Editar</button>
-
-        </form>
 
     </main>
 
