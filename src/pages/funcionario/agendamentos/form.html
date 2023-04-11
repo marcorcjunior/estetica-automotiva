@@ -19,75 +19,86 @@
 
 <body>
 
-    <header style="background-color: #D9D9D9;">
-        <span alt="Autoestétic" class="material-symbols-outlined" style="font-size: 64px; padding: 8px;">
-            image
-        </span>
-        <h1>Manutenção agenda de serviços</h1>
-        <div class="container"></div>
-        <a href="../../../../src/" style="flex: 0; flex-direction: column; align-items: center; padding: 8px;">
-            <span alt="sair" class="material-symbols-outlined" style="font-size: 36px;">
-                logout
+    <header>
+        <button onclick="history.back();" class="button-header">
+            <span alt="voltar" class="material-symbols-outlined" style="font-size: 36px;">
+                arrow_back
             </span>
-            <label>sair</label>
-        </a>
+        </button>
+
+        <h1>Manutenção de agenda</h1>
+        <div class="container"></div>
+
+        <button onclick="" class="button-header">
+            <span alt="sair" class="material-symbols-outlined" style="font-size: 36px;">
+                delete
+            </span>
+        </button>
+
     </header>
     <br />
 
-    <main class="container" style="padding-left: 16px; padding-right: 16px;">
+    <main>
 
-        <h2>
-            Formulario de dados
-        </h2>
-        <br />
+        <div class="container-row">
+            <div class="container"></div>
+            <div class="container" style="padding-left: 16px; padding-right: 16px;">
 
-        <form class="container" action="./" method="post/put" id="form-cad-agenda">
+                <h2>
+                    Formulario de dados
+                </h2>
+                <br />
 
-            <select name="clientes" id="clientes">
-                <option value="" disabled selected>Selecione o cliente</option>
-            </select>
-            <br />
-            <select name="carros" id="carros">
-                <option value="" disabled selected>Selecione o carro do cliente</option>
-            </select>
+                <form class="container" action="./" method="post/put" id="form-cad-agenda">
 
-
-            <br />
-
-            <input type="date" />
-
-            <br />
-            <br />
-            <h3>
-                Lista de serviços
-            </h3>
-
-
-            <div class="container-row">
-                <div class="container" style="justify-content: center;">
-                    <select name="servicos" id="servicos" style="margin-right: 16px;">
-                        <option value="" disabled selected>Selecione o serviço</option>
+                    <select name="clientes" id="clientes">
+                        <option value="" disabled selected>Selecione o cliente</option>
+                    </select>
+                    <br />
+                    <select name="carros" id="carros">
+                        <option value="" disabled selected>Selecione o carro do cliente</option>
                     </select>
 
-                </div>
-                <button style="width: 48px; height: 48px; justify-content: center; border-radius: 50%;">
-                    <div class="container"></div>
-                    <div class="container">
-                        <span alt="sair" class="material-symbols-outlined" style="font-size: 24px;">
-                            add
-                        </span>
+
+                    <br />
+
+                    <input type="date" />
+
+                    <br />
+                    <br />
+                    <h3>
+                        Lista de serviços
+                    </h3>
+
+
+                    <div class="container-row">
+                        <div class="container" style="justify-content: center;">
+                            <select name="servicos" id="servicos" style="margin-right: 16px;">
+                                <option value="" disabled selected>Selecione o serviço</option>
+                            </select>
+
+                        </div>
+                        <button class="button-add-aux">
+                            <div class="container"></div>
+                            <div class="container">
+                                <span alt="sair" class="material-symbols-outlined" style="font-size: 24px;">
+                                    add
+                                </span>
+                            </div>
+                            <div class="container"></div>
+                        </button>
                     </div>
-                    <div class="container"></div>
-                </button>
+
+                    <br />
+                    <button class="button-padrao" type="submit" style="width: 256px;" form="form-cad-agenda"
+                        value="Adicionar/Editar">Adicionar/Editar</button>
+
+                </form>
             </div>
-
-            <br />
-            <button type="submit" form="form-cad-agenda" value="Adicionar/Editar">Adicionar/Editar</button>
-
-        </form>
+            <div class="container"></div>
+        </div>
 
     </main>
-
 
 </body>
 

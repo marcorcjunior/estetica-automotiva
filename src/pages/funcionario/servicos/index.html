@@ -19,130 +19,84 @@
 
 <body>
 
-    <header style="background-color: #D9D9D9;">
-        <span alt="Autoestétic" class="material-symbols-outlined" style="font-size: 64px; padding: 8px;">
-            image
-        </span>
+    <header>
+        <img src="../../../assets/imagens/logo.png" alt="Autoestétic" class="img-logo" />
         <h1>Lista de serviços</h1>
         <div class="container"></div>
-        <a href="../../../../src/" style="flex: 0; flex-direction: column; align-items: center; padding: 8px;">
+        <button onclick="location.href = '../../../../src/'" class="button-header">
             <span alt="sair" class="material-symbols-outlined" style="font-size: 36px;">
                 logout
             </span>
-            <label>sair</label>
-        </a>
+            
+        </button>
     </header>
-    <br />
 
     <main class="container">
 
         <ul>
-            <li class="container-row" style="padding: 16px;">
 
-                <div>
-                    <div class="container-row"
-                        style="width: 64px; height: 64px; justify-content: center; background-color: #D9D9D9; border-radius: 50%;">
+            <li class="container" style="padding: 32px; justify-content: center;">
+                <a onclick="location.href = '../agendamentos/form.html'">
+                    <div class="container-row" style="display: flex; align-items: center; justify-content: center;">
+                        <label style="font-size: large;">
+                            Nome do serviço
+                        </label>
+
                         <div class="container"></div>
-                        <div class="container">
-                            <div class="container"></div>
-                            <label style="font-size: medium;">
-                                NS
-                            </label>
-                            <div class="container"></div>
-                        </div>
-                        <div class="container"></div>
-                    </div>
-                </div>
 
-                <div class="container" style="padding-left: 16px; justify-content: center;">
-                    <label style="font-size: large;">
-                        Nome do serviço
-                    </label>
-                    <label>
-                        Descrição da realização do serviço
-                    </label>
-                </div>
-
-                <div>
-                    <div class="container-row">
-
-                        <div class="container" style="padding: 16px; justify-content: center;">
-                            <label style="white-space: nowrap; font-size: large;">
+                        <div style="padding-left: 32px;">
+                            <label
+                                style="font-weight: bold; text-align: center; white-space: nowrap; font-size: large;">
                                 R$ 50,00
                             </label>
                         </div>
 
-                        <a href="../servicos/form.html" class="container" style="padding: 16px;">
+                        <button class="button-arrow-list">
                             <span alt="sair" class="material-symbols-outlined" style="font-size: 36px;">
-                                edit
+                                navigate_next
                             </span>
-                        </a>
-                        <a href="../servicos/form.html" class="container" style="padding: 16px;">
-                            <span alt="sair" class="material-symbols-outlined" style="font-size: 36px;">
-                                delete
-                            </span>
-                        </a>
+                        </button>
                     </div>
-                </div>
 
+                    <label>
+                        Descrição da realização do serviço.
+                    </label>
+                </a>
             </li>
 
-            <li class="container" style="padding: 16px; background-color: #D9D9D9;">
-                <div class="container-row">
-
-                    <div>
-                        <div class="container-row"
-                            style="width: 64px; height: 64px; justify-content: center; background-color: #FFFFFF; border-radius: 50%;">
-                            <div class="container"></div>
-                            <div class="container">
-                                <div class="container"></div>
-                                <label style="font-size: medium;">
-                                    NS
-                                </label>
-                                <div class="container"></div>
-                            </div>
-                            <div class="container"></div>
-                        </div>
-                    </div>
-
-                    <div class="container" style="padding-left: 16px; justify-content: center;">
+            <li class="container" style="padding: 32px; justify-content: center; background-color: #D9D9D9;">
+                <a onclick="location.href = '../agendamentos/form.html'">
+                    <div class="container-row" style="display: flex; align-items: center; justify-content: center;">
                         <label style="font-size: large;">
                             Nome do serviço
                         </label>
-                        <label>
-                            Descrição da realização do serviço
-                        </label>
-                    </div>
 
-                    <div>
-                        <div class="container-row">
-                            <div class="container" style="padding: 16px; justify-content: center;">
-                                <label style="white-space: nowrap; font-size: large;">
-                                    R$ 120,00
-                                </label>
-                            </div>
+                        <div class="container"></div>
 
-                            <a href="../servicos/form.html" class="container" style="padding: 16px;">
-                                <span alt="sair" class="material-symbols-outlined" style="font-size: 36px;">
-                                    edit
-                                </span>
-                            </a>
-                            <a href="../servicos/form.html" class="container" style="padding: 16px;">
-                                <span alt="sair" class="material-symbols-outlined" style="font-size: 36px;">
-                                    delete
-                                </span>
-                            </a>
+                        <div style="padding-left: 32px;">
+                            <label
+                                style="font-weight: bold; text-align: center; white-space: nowrap; font-size: large;">
+                                R$ 120,00
+                            </label>
                         </div>
+
+                        <button class="button-arrow-list">
+                            <span alt="sair" class="material-symbols-outlined" style="font-size: 36px;">
+                                navigate_next
+                            </span>
+                        </button>
                     </div>
 
-                </div>
-
+                    <label>
+                        Descrição da realização do serviço.
+                    </label>
+                </a>
             </li>
+
 
         </ul>
 
-        <button onclick="location.href = '../servicos/form.html'"
-            style="position: absolute; right: 18px; bottom: 96px; width: 48px; height: 48px; justify-content: center; border-radius: 50%;">
+        <button onclick="location.href = '../servicos/form.html'" class="button-float">
             <div class="container"></div>
             <div class="container">
                 <span alt="sair" class="material-symbols-outlined" style="font-size: 24px;">
@@ -154,29 +108,33 @@
 
     </main>
 
-    <footer class="container-row" style="background-color: #D9D9D9; padding: 8px;">
+    <footer class="container-row" style="padding: 8px;">
         <div class="container"></div>
 
-        <a href="../agendamentos/" class="container" style="align-items: center;">
+        <button onclick="location.href = '../agendamentos/'" class="button-footer">
             <span alt="home" class="material-symbols-outlined" style="font-size: 36px;">
                 home
             </span>
             <label>agenda</label>
-        </a>
+        </button>
+
         <div class="container"></div>
-        <a href="../clientes/" class="container" style="align-items: center;">
+
+        <button onclick="location.href = '../clientes/'" class="button-footer">
             <span alt="home" class="material-symbols-outlined" style="font-size: 36px;">
                 group
             </span>
             <label>clientes</label>
-        </a>
+        </button>
+
         <div class="container"></div>
-        <a href="../servicos/" class="container" style="align-items: center;">
+
+        <button onclick="location.href = '../servicos/'" class="button-footer">
             <span alt="home" class="material-symbols-outlined" style="font-size: 36px;">
                 attach_money
             </span>
             <label>serviços</label>
-        </a>
+        </button>
 
         <div class="container"></div>
     </footer>
