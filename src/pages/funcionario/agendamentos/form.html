@@ -52,18 +52,18 @@
 
                 <form class="container" action="./" method="post/put" id="form-cad-agenda">
 
-                    <select name="clientes" id="clientes">
+                    <select required name="clientes" id="clientes">
                         <option value="" disabled selected>Selecione o cliente</option>
                     </select>
                     <br />
-                    <select name="carros" id="carros">
+                    <select required name="carros" id="carros">
                         <option value="" disabled selected>Selecione o carro do cliente</option>
                     </select>
 
 
                     <br />
 
-                    <input type="date" />
+                    <input required type="date" id="data" name="data" />
 
                     <br />
                     <br />

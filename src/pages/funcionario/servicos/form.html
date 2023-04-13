@@ -22,7 +22,7 @@
         </button>
 
         <h1>Manutençao de serviços</h1>
-        
+
         <div class="container"></div>
 
         <button onclick="location.href = './'" class="button-header">
@@ -46,13 +46,13 @@
 
                 <form class="container" action="./" method="post/put" id="form-cad-servico">
 
-                    <input name="titulo" id="titulo" placeholder="Titulo" type="text" />
+                    <input required name="titulo" id="titulo" placeholder="Titulo" type="text" />
                     <br />
-                    <input name="descricao" id="descricao" placeholder="Descrição" type="text" />
+                    <input required name="descricao" id="descricao" placeholder="Descrição" type="text" />
                     <br />
-                    <input name="valor" id="valor" placeholder="Valor serviço" type="number" />
+                    <input required name="valor" id="valor" placeholder="Valor serviço" type="number" />
                     <br />
-                    <input name="tempo" id="tempo" placeholder="Tempo médio de execução" type="time" />
+                    <input required name="tempo" id="tempo" placeholder="Tempo médio de execução" type="time" />
 
                     <br />
                     <br />
