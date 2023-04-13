@@ -14,10 +14,10 @@ addServico = () => {
 
     const id = `servico-${servicos}`.replaceAll(' ', '').toLowerCase();
 
-    // if(servicos.replaceAll(' ', '') == '') {
-    //     alert('É necesario preencher todos os dados referentes ao carro!');
-    //     return;
-    // }
+    if(servicos.replaceAll(' ', '') == '') {
+        alert('É necesario selecionar um serviço!');
+        return;
+    }
 
     const item = `
     <div class="container-row" id="${id}">
