@@ -1,8 +1,24 @@
+/* Font Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* Icons */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
 :root {
     --primary-color: #006AF7;
     --secondary-color: #7702FF;
     --text-black-color: #363636;
     --text-white-color: #FFFFFF;
+    --success-color: #4caf50;
+    --error-color: #f44336;
 }
 
 * {
@@ -69,21 +85,39 @@ hr {
 
 input,
 select {
-    height: 36px;
     font-size: large;
-    border-width: 2px;
-    border-color: var(--text-black-color);
-    border-radius: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
+    border-width: 0px;
+    border-bottom-width: 2px;
+    border-bottom-color: var(--primary-color);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 16px;
+    background-color: whitesmoke;
+    outline: none;
+
+    margin: 4px;
+    justify-content: center;
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select {
+    background-image: url('../imagens/expand_more.png');
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 16px) center;
+}
+
+dt {
+    display: list-item;
+    list-style-type: disc;
+}
+
+dl {
+    margin-bottom: 0px;
 }
 
 .container {
@@ -100,8 +134,24 @@ select {
     flex-direction: row !important;
 }
 
+.centralizador {
+    flex: 0.3 !important;
+}
+
+.card {
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
 .img-logo-login {
     width: 35%;
+    max-width: 500px;
     object-fit: cover;
     background-color: white;
     margin: 16px;
@@ -129,15 +179,65 @@ select {
     border-radius: 50%;
 }
 
+.font-price {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    padding: 32px;
+    justify-content: center;
+}
+
+.row--white {
+    background-color: white;
+}
+
+.row--whitesmoke {
+    background-color: whitesmoke;
+}
+
+.title-row {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.description-row {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
 .button-padrao {
-    height: 36px;
+    padding: 8px;
     font-size: large;
     border-radius: 24px;
     padding-left: 18px;
     border: 0px;
     background-color: var(--primary-color);
     color: var(--text-white-color);
+}
 
+.button-padrao[type=submit] {
+    position: relative;
+    /* left: 15%;
+    right: 15%;
+    bottom: 64px; */
 }
 
 .button-header {
@@ -189,6 +289,7 @@ select {
 .button-add-aux {
     width: 48px;
     height: 48px;
+    margin: 4px;
     justify-content: center;
     border-radius: 35%;
     border: 0px;
@@ -212,7 +313,7 @@ select {
 
 
 /* Mobile */
-@media all and (max-width: 600px) {
+@media all and (max-width: 960px) {
 
     header>h1 {
         font-size: 130%;
@@ -220,7 +321,11 @@ select {
 
     main {
         margin-top: 71px;
-        margin-bottom: 71px;    
+        margin-bottom: 71px;
+    }
+
+    .centralizador {
+        flex: 0.05 !important;
     }
 
     .img-logo {

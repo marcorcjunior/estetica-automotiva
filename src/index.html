@@ -7,16 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autoestétic</title>
 
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <script src="./assets/scripts/index.js"></script>
+    <script src="./assets/scripts/utils.js"></script>
 
 </head>
-
 
 <body>
     <br />
@@ -34,34 +33,40 @@
                 <div class="container"></div>
             </div>
             <div class="container-row">
-                <div class="container"></div>
-                <div class="container" method="get" id="form-login">
-                    <input placeholder="E-mail" type="email" />
+                <div class="container centralizador"></div>
+
+                <form class="container" id="formLogin">
+
+                    <input id="email" name="email" type="email" placeholder="E-mail" required />
                     <br />
-                    <input placeholder="Senha" type="password" />
+
+                    <input id="senha" name="senha" type="password" placeholder="Senha" required />
                     <br />
+
                     <div class="container-row">
                         <div class="container"></div>
-                        <a href="">Esqueceu a senha?</a>
+                        <a href="../src/pages/usuarios/recuperar-senha.html">
+                            Esqueceu a senha?
+                        </a>
                         <div class="container"></div>
                     </div>
+
                     <div class="container-row">
                         <div class="container"></div>
-                        <a href="">Não tem uma conta? <b>Cadastre-se!</b></a>
+                        <a href="../src/pages/usuarios">
+                            Não tem uma conta? <b>Cadastre-se!</b>
+                        </a>
                         <div class="container"></div>
                     </div>
+
                     <br />
-                    <button class="button-padrao" onclick="location.href = './pages/funcionario/agendamentos'"
-                        type="submit" form="form-login" value="Entrar">
-                        Entrar Funcionario
+
+                    <button class="button-padrao" type="submit" form="formLogin" value="send">
+                        Entrar
                     </button>
-                    <br />
-                    <button class="button-padrao" onclick="location.href = './pages/cliente/agendamentos'" type="submit"
-                        form="form-login" value="Entrar">
-                        Entrar Cliente
-                    </button>
-                </div>
-                <div class="container"></div>
+                </form>
+
+                <div class="container centralizador"></div>
             </div>
         </section>
     </main>

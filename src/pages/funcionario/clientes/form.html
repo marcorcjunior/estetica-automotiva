@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autoestétic</title>
 
-    <link rel="stylesheet" href="../../../assets/css/styles.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../assets/css/styles.css" />
+
+    <script src="../../../assets/scripts/utils.js"></script>
+    <script src="../../../assets/scripts/funcionario/clientes/index.js"></script>
 
 </head>
 
@@ -29,7 +29,7 @@
         <h1>Manutençao de clientes</h1>
         <div class="container"></div>
 
-        <button onclick="" class="button-header">
+        <button onclick="location.href = './'" class="button-header">
             <span alt="sair" class="material-symbols-outlined" style="font-size: 36px;">
                 delete
             </span>
@@ -41,8 +41,8 @@
     <main>
 
         <div class="container-row">
-            <div class="container"></div>
-            <div class="container" style="padding-left: 16px; padding-right: 16px;">
+            <div class="container centralizador"></div>
+            <div class="container">
 
                 <h2>
                     Formulario de dados
@@ -65,41 +65,41 @@
                         Lista de carros
                     </h3>
 
-
-                    <div class="container-row" style="flex-wrap: wrap;">
-                        <div class="container" style="justify-content: center;">
-                            <input name="modelo" id="modelo" placeholder="Modelo" />
-                        </div>
-
-                        <div style="margin: 8px;"></div>
-
-                        <div class="container" style="justify-content: center;">
-                            <input name="placa" id="placa" placeholder="Placa" />
-                        </div>
-
-                        <div style="margin: 8px;"></div>
-
-                        <button class="button-add-aux">
-                            <div class="container"></div>
-                            <div class="container">
-                                <span alt="sair" class="material-symbols-outlined" style="font-size: 24px;">
-                                    add
-                                </span>
-                            </div>
-                            <div class="container"></div>
-                        </button>
+                    <div id="listaCarros" class="container">
 
                     </div>
 
+                    <div class="container-row">
+                        <div class="container-row" style="flex-wrap: wrap;">
+                            <input name="modelo" id="modelo" placeholder="Modelo" class="container" />
+                            <input name="ano" id="ano" placeholder="Ano" class="container" />
+                            <input name="placa" id="placa" placeholder="Placa" class="container" />                        
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; margin-left: 8px;">
+                            <div class="container"></div>
+                            <button class="button-add-aux" type="button" onclick="addCarro()">
+                                <div class="container"></div>
+                                <div class="container">
+                                    <span alt="sair" class="material-symbols-outlined" style="font-size: 24px;">
+                                        add
+                                    </span>
+                                </div>
+                                <div class="container"></div>
+                            </button>
+                            <div class="container"></div>
+                        </div>
+                    </div>
+
                     <br />
-                    <button class="button-padrao" type="submit" style="width: 256px;" form="form-cad-clientes"
+                    <button class="button-padrao" type="submit" form="form-cad-clientes"
                         value="Adicionar/Editar">Adicionar/Editar</button>
 
                     <br />
                     <br />
                 </form>
             </div>
-            <div class="container"></div>
+            <div class="container centralizador"></div>
         </div>
 
 

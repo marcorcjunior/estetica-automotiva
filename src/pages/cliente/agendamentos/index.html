@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autoestétic</title>
 
-    <link rel="stylesheet" href="../../../assets/css/styles.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../assets/css/styles.css" />
+
+    <script src="../../../assets/scripts/utils.js"></script>
+    <script src="../../../assets/scripts/cliente/agendamentos/index.js"></script>
 
 </head>
 
@@ -33,65 +33,8 @@
 
     <main class="container">
 
-        <ul>
-            <li class="container" style="padding: 32px; justify-content: center;">
-                <a onclick="location.href = '../agendamentos/form.html'">
-                    <div class="container-row" style="display: flex; align-items: center; justify-content: center;">
-                        <label style="font-size: large;">
-                            Nome do serviço
-                        </label>
-
-                        <div class="container"></div>
-
-                        <div style="padding-left: 32px;">
-                            <label
-                                style="font-weight: bold; text-align: center; white-space: nowrap; font-size: large;">
-                                R$ 120,00
-                            </label>
-                        </div>
-
-                        <button class="button-arrow-list">
-                            <span alt="sair" class="material-symbols-outlined" style="font-size: 36px;">
-                                navigate_next
-                            </span>
-                        </button>
-                    </div>
-
-                    <label>
-                        Descrição da realização do serviço.
-                    </label>
-                </a>
-            </li>
-
-            <li class="container" style="padding: 32px; justify-content: center; background-color: #D9D9D9;">
-                <a onclick="location.href = '../agendamentos/form.html'">
-                    <div class="container-row" style="display: flex; align-items: center; justify-content: center;">
-                        <label style="font-size: large;">
-                            Nome do serviço
-                        </label>
-
-                        <div class="container"></div>
-
-                        <div style="padding-left: 32px;">
-                            <label
-                                style="font-weight: bold; text-align: center; white-space: nowrap; font-size: large;">
-                                R$ 120,00
-                            </label>
-                        </div>
-
-                        <button class="button-arrow-list">
-                            <span alt="sair" class="material-symbols-outlined" style="font-size: 36px;">
-                                navigate_next
-                            </span>
-                        </button>
-                    </div>
-
-                    <label>
-                        Descrição da realização do serviço.
-                    </label>
-                </a>
-            </li>
-
+        <ul id="listaAgendaServicos">
+            
         </ul>
 
         <button onclick="location.href = './form.html'" class="button-float">

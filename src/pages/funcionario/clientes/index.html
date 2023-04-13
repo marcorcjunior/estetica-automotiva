@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autoestétic</title>
 
-    <link rel="stylesheet" href="../../../assets/css/styles.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../assets/css/styles.css" />
+
+    <script src="../../../assets/scripts/utils.js"></script>
+    <script src="../../../assets/scripts/funcionario/clientes/index.js"></script>
 
 </head>
 
@@ -33,91 +33,7 @@
     
     <main class="container">
 
-        <ul>
-
-            <li class="container" style="padding: 32px; justify-content: center;">
-                <a onclick="location.href = '../clientes/form.html'">
-                    <div class="container-row" style="display: flex; align-items: center; justify-content: center;">
-
-                        <div class="avatar-text">
-                            <div class="container"></div>
-                            <div class="container">
-                                <div class="container"></div>
-                                <label style="font-size: medium;">
-                                    NC
-                                </label>
-                                <div class="container"></div>
-                            </div>
-                            <div class="container"></div>
-                        </div>
-
-                        <label style="font-size: large;">
-                            Nome do cliente
-                        </label>
-
-                        <div class="container"></div>
-
-                        <button class="button-arrow-list">
-                            <span alt="sair" class="material-symbols-outlined" style="font-size: 36px;">
-                                navigate_next
-                            </span>
-                        </button>
-                    </div>
-
-                    <br />
-
-                    <label>
-                        Descrição da quantidade de carros cadastrados
-                    </label>
-                </a>
-            </li>
-
-            <li class="container" style="padding: 32px; justify-content: center; background-color: #D9D9D9;">
-                <a onclick="location.href = '../clientes/form.html'">
-                    <div class="container-row" style="display: flex; align-items: center; justify-content: center;">
-
-                        <div class="avatar-text" style="background-color: white;">
-                            <div class="container"></div>
-                            <div class="container">
-                                <div class="container"></div>
-                                <label style="font-size: medium;">
-                                    NC
-                                </label>
-                                <div class="container"></div>
-                            </div>
-                            <div class="container"></div>
-                        </div>
-
-                        <label style="font-size: large;">
-                            Nome do cliente
-                        </label>
-
-                        <div class="container"></div>
-
-                        <button class="button-arrow-list">
-                            <span alt="sair" class="material-symbols-outlined" style="font-size: 36px;">
-                                navigate_next
-                            </span>
-                        </button>
-                    </div>
-
-                    <br />
-
-                    <label>
-                        Descrição da quantidade de carros cadastrados
-                    </label>
-
-                    <hr style="margin-top: 16px; margin-bottom: 16px;" />
-
-                    <ol>
-                        <li>Carro exemplo - Modelo - Ano - Cor</li>
-                        <br />
-                        <li>Carro exemplo - Modelo - Ano - Cor</li>
-                        <br />
-                        <li>Carro exemplo - Modelo - Ano - Cor</li>
-                    </ol>
-                </a>
-            </li>
+        <ul id="listaClientes">
 
         </ul>
 
