@@ -1,12 +1,9 @@
-let formLogin = null;
-
 constructor = () => {
-    formLogin = document.getElementById("formLogin");
     events();
 }
 
 events = () => {
-    formLogin.addEventListener("submit", (e) => {
+    document.getElementById("formLogin").addEventListener("submit", (e) => {
         e.preventDefault();
 
         setLogar(
